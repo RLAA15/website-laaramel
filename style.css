@@ -1,0 +1,326 @@
+/* TODO, Change the font style */
+/* TODO, Change the font color */
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #141617;
+}
+
+.header{
+    width: 100vw;
+    height: 20vh;
+    background-image: url(header.jpg);
+    background-size: contain;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    width: 90%;
+    height: 5vh;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: #141617;
+    z-index: 10;
+}
+
+.left{
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.right{
+    flex: 3;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar button{
+    padding: 0.2rem 1.3rem;
+    background-color: rgba(50, 50, 50, 0);
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    transition: all 0.5s;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    padding: 0.2rem 1.8rem;
+    background-color: rgba(50, 50, 50, 0.5);
+}
+
+.navbar button:active{
+    padding: 0.2rem 1.8rem;
+    background-color: rgba(70, 70, 70, 0.7);
+}
+
+.screen{
+    display: none;
+    width: 98vw;
+}
+
+.screen.active{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container.one{
+    width: 30%;
+    color: rgb(255, 255, 255);
+}
+
+.line-name{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.line-title{
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.info{
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.line{
+    border: 2px solid white;
+    width: 20%;
+    margin: 3rem auto;
+}
+
+.container.two{
+    height: 100vh;
+    justify-items: center;
+}
+
+.projects-title{
+    font-size: 3rem;
+    color: white;
+}
+
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4rem;
+}
+
+.card{
+    box-shadow: 0px 2px 8px 0px #f9f871;
+    background: linear-gradient(
+        0deg,
+        #141617 0%,
+        #30343a 100%
+    );
+    text-align: center;
+    min-width: 330px;
+    max-width: 350px;
+    border-radius: 3rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.card:hover{
+    background: linear-gradient(
+        0deg,
+        #212425 0%,
+        #3f454d 100%
+    );
+}
+
+.proj-pic{
+    background-image: url(bg1.jpg);
+    height: 10rem;
+    background-position: 80% 50%;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 0;
+}
+
+.proj-name{
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #f9f871;
+}
+
+.proj-info{
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    color: white;
+}
+
+#screen2{
+    color: white;
+    justify-items: center;
+}
+
+.intro-skills{
+    width: 25%;
+}
+
+.intro-title{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.intro-info{
+    font-size: 1.8rem;
+    margin-top: 0.2rem;
+}
+
+
+.skill-container{
+    width: 50vw;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.skill-header{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    gap: 1rem;
+    width: 80%;
+}
+.skill-header h2{
+    font-size: 2.5rem;
+}
+
+.skill-header div{
+    flex: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.skill-info{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+.skill-info h3{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.skill-level{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.skill-info h4{
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.skill-info p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contact-container{
+    width: 28%;
+    margin: 0 auto;
+    color: white;
+}
+
+.contact-title h1{
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.contact-info-container{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: 1rem auto;
+    padding: 1.5rem 0;
+}
+
+.link-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.link-container button{
+    font-size: 1.5rem;
+    padding: 0.1rem 0.4rem;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    cursor: pointer;
+}
+
+.link-container button:hover{
+    color: rgb(197, 191, 191);
+}
+
+.link-container button:active{
+    color: rgb(129, 122, 122);
+}
+
+.contact-info{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+
+/* TODO, media for phones */
+
+
+@media (min-width: 700px) {
+    .container.one{
+        width: 80%;
+    }
+    .contact-container{
+        width: 80%;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container.one{
+        width: 30%;
+    }
+
+    .contact-container{
+        width: 28%;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
