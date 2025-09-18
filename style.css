@@ -99,20 +99,26 @@ body {
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;                  /* space between cards */
+    justify-content: center;     /* center the grid inside container */
+    justify-items: center;       /* center items inside grid */
+    width: 100%;
+    max-width: 1200px;           /* optional: prevents grid from stretching too wide on big screens */
+    margin: 0 auto;
 }
 
 .card {
+    min-width: 250px;
+    max-width: 350px;
     box-shadow: 0px 2px 8px #f9f871;
     background: linear-gradient(0deg, #141617 0%, #30343a 100%);
     text-align: center;
-    min-width: 330px;
-    max-width: 350px;
     border-radius: 3rem;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    padding-bottom: 1rem; /* optional spacing for content */
 }
 
 .card p { margin: 1rem auto; }
@@ -226,7 +232,7 @@ body {
     .line-title{font-size: 1.5rem;}
     .info { width: 100%; font-size: 1.2rem; }
     .projects-title { font-size: 2.4rem; }
-    .card-container { grid-template-columns: 300px; grid-gap: 2rem; justify-items: center; justify-content: center; width: 80%; }
+    .card-container { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem 0; }
     .card { max-width: 300px; min-width: 250px; }
     .proj-name { font-size: 1.2rem; }
     .proj-info { width: 68%; font-size: 0.8rem; }
@@ -246,7 +252,7 @@ body {
 @media (min-width: 650px) {
     .navbar button{font-size: 1.5rem;}
     .container.one { width: 50%; margin: 0 auto;}
-    .card-container { grid-template-columns: repeat(2, 1fr); }
+    .card-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 }
 
 @media (min-width: 800px) {
@@ -259,7 +265,7 @@ body {
 @media (min-width: 1000px) {
     .header{background-repeat: repeat; background-size: auto;}
     .navbar { padding: 1rem 4rem; width: 70%;}
-    .card-container { width: 80%; grid-template-columns: repeat(3, 1fr); }
+    .card-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem 0; }
     .navbar button { padding: 0.2rem 1rem; font-size: 1.5rem;}
     .contact-container { width: 50%; }
 }
