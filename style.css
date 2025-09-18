@@ -226,7 +226,7 @@ body {
     .line-title{font-size: 1.5rem;}
     .info { width: 100%; font-size: 1.2rem; }
     .projects-title { font-size: 2.4rem; }
-    .card-container { grid-template-columns: 300px; grid-gap: 2rem; justify-items: center; justify-content: center;}
+    .card-container { grid-template-columns: 300px; grid-gap: 2rem; justify-items: center; justify-content: center; width: 80%; }
     .card { max-width: 300px; min-width: 250px; }
     .proj-name { font-size: 1.2rem; }
     .proj-info { width: 68%; font-size: 0.8rem; }
@@ -238,7 +238,6 @@ body {
     .skill-header h2 { font-size: 1.5rem; }
     .skill-info h3 { font-size: 1.9rem;}
     .skill-info h4 { font-size: 1rem; }
-    .contact-container { width: 80%; }
     .contact-title h1 { font-size: 3rem; }
     .contact-info-container p { font-size: 1.3rem; }
     .contact-info-container button { font-size: 1.2rem;}
@@ -272,7 +271,7 @@ body {
     .line-title { font-size: 1.2rem; }
     .container.one { width: 30%; }
     .projects-title { font-size: 3rem; }
-    .card-container { width: 80%; grid-template-columns: repeat(4, 1fr); }
+    .card-container {grid-template-columns: repeat(4, 1fr); }
     .proj-name { font-size: 1.6rem; }
     .card { padding-bottom: 1rem; }
     .proj-info { font-size: 1rem; width: 80%; }
