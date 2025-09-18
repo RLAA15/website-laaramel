@@ -143,13 +143,14 @@ body {
 }
 
 /* Intro & Skills */
-.intro-skills { width: 25%; }
+.intro-skills { width: 25%; color: #fff;}
 .intro-title { font-size: 4rem; margin-bottom: 0; }
 .intro-info { font-size: 1.8rem; margin-top: 0.2rem; }
 
 .skill-container {
     width: 50vw;
     margin: 5rem auto 2rem auto;
+    color: #fff;
 }
 
 .skill-header {
@@ -214,44 +215,57 @@ body {
 
 /* Responsive Media Queries */
 @media (min-width: 400px) {
-    .header { background-repeat: no-repeat; background-size: cover; }
+    .header { background-repeat: no-repeat; background-size: cover; background-position: center; height: 15vh;}
     .right { flex: 4; }
     .navbar { padding: 0.1rem; }
     .navbar button { font-size: 1rem; padding: 0.1rem 0.5rem; }
-    .navbar button:hover { padding: 0 1rem; }
-    .container.one { width: 80%; }
-    .info { width: 80%; font-size: 1.2rem; }
+    .navbar button:hover { padding: 0 0.8rem; }
+    .container.one { width: 80%;}
+    .line-name{font-size: 3rem;}
+    .line-title{font-size: 1.5rem;}
+    .info { width: 100%; font-size: 1.2rem; }
     .projects-title { font-size: 2.4rem; }
     .card-container { grid-template-columns: 300px; grid-gap: 2rem; }
     .card { max-width: 300px; min-width: 250px; }
     .proj-name { font-size: 1.2rem; }
     .proj-info { width: 68%; font-size: 0.8rem; }
-    .intro-skills { width: 80%; margin: 0 1rem; }
+    .intro-skills { width: 60%; margin: 0 auto;}
     .intro-title { font-size: 3rem; }
     .intro-info { font-size: 1.5rem; }
     .skill-container { width: 100%; }
     .skill-header { width: 80%; margin: 0 auto; }
     .skill-header h2 { font-size: 1.5rem; }
-    .skill-info h3 { font-size: 1.9rem; }
+    .skill-info h3 { font-size: 1.9rem;}
     .skill-info h4 { font-size: 1rem; }
-    .contact-container { width: 90%; }
+    .contact-container { width: 80%; }
     .contact-title h1 { font-size: 3rem; }
     .contact-info-container p { font-size: 1.3rem; }
-    .contact-info-container button { font-size: 1.5rem; }
+    .contact-info-container button { font-size: 1.2rem;}
 }
 
-@media (min-width: 700px) {
-    .navbar { padding: 2rem 3rem 0 3rem; }
-    .container.one { width: 50%; }
+@media (min-width: 600px) {
+    .navbar button{font-size: 1.5rem;}
+    .container.one { width: 50%; margin: 0 auto;}
     .card-container { grid-template-columns: repeat(2, 1fr); }
-    .intro-skills { width: 60%; }
+}
+
+@media (min-width: 800px) {
+    .header{background-size: cover; background-position: center;}
+    .navbar { padding: 2rem 3rem; }
+    .info{width: 100%;}
     .contact-container { width: 80%; }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .header{background-repeat: repeat; background-size: auto;}
+    .navbar { padding: 1rem 4rem; width: 70%;}
+    .card-container { width: 80%; grid-template-columns: repeat(3, 1fr); }
+    .navbar button { padding: 0.2rem 1rem; font-size: 1.5rem;}
+    .contact-container { width: 50%; }
+}
+
+@media (min-width: 1200px) {
     .navbar { padding: 1rem 4rem; width: 80%; }
-    .navbar button { padding: 0.2rem 1rem; }
     .navbar button:hover { padding: 0.2rem 1.5rem; }
     .line-name { font-size: 3rem; }
     .line-title { font-size: 1.2rem; }
@@ -261,8 +275,8 @@ body {
     .proj-name { font-size: 1.6rem; }
     .card { padding-bottom: 1rem; }
     .proj-info { font-size: 1rem; width: 80%; }
-    .intro-skills { width: 30%; margin: 0 auto; color: #fff;}
-    .skill-container { width: 50%; color: #fff;}
+    .intro-skills { width: 30%; margin: 0 auto;}
+    .skill-container { width: 50%;}
     .skill-header h2 { font-size: 2rem; }
     .skill-info h3 { font-size: 2.5rem; }
     .skill-info h4 { font-size: 1.5rem; }
