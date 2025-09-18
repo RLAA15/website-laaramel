@@ -2,7 +2,169 @@
 /* TODO, Change the font color */
 
 
-body{
+@media (min-width: 400px) {
+    .header{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .right{
+        flex: 4;
+    }
+
+    .navbar{
+        padding: 0.1rem;
+    }
+
+    .navbar button{
+        font-size: 1rem;
+        padding: 0.1rem 0.5rem;
+    }
+
+    .navbar button:hover{
+        padding: 0 1rem;
+    }
+    .container.one{
+        width: 80%;
+    }
+
+    .line-name{
+        font-size: 3rem;
+    }
+
+    .line-title{
+        font-size: 1.2rem;
+    }
+
+    .info{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .projects-title{
+        font-size: 2.4rem;
+    }
+
+    .card-container{
+        grid-template-columns: 300px;
+        grid-gap: 2rem;
+    }
+
+    .card{
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    .proj-name{
+        font-size: 1.2rem;
+    }
+
+    .proj-info{
+        margin: 1rem auto;
+        width: 68%;
+        font-size: 0.8rem;
+    }
+
+    .intro-skills{
+        width: 80%;
+        margin: 0 1rem ;
+    }
+
+    .intro-title{
+        font-size: 3rem;
+    }
+
+    .intro-info{
+        font-size: 1.5rem;
+    }
+
+    .skill-container{
+        width: 100%;
+    }
+
+    .skill-header{
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .skill-header h2{
+        font-size: 1.5rem;
+    }
+
+    .skill-info h3{
+        font-size: 1.9rem;
+    }
+
+    .skill-info h4{
+        font-size: 1rem;
+    }
+
+    .contact-container{
+        width: 90%;
+    }
+    
+    .contact-title h1{
+        font-size: 3rem;
+    }
+
+    .contact-info-container p{
+        font-size: 1.3rem;
+    }
+
+    .contact-info-container button{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 700px) {
+    .header{
+        background-size: cover;
+    }
+
+    .right{
+        flex: 4;
+    }
+
+    .navbar{
+        position: sticky;
+        top: 0px;
+        padding: 2rem 3rem;
+        padding-bottom: 0;
+    }
+
+    .navbar button{
+        font-size: 1.5rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .container.one{
+        width: 50%;
+    }
+
+    .info{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .intro-skills{
+        width: 100%;
+    }
+
+    .contact-container{
+        width: 80%;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro-skills{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body{
     margin: 0;
     padding: 0;
     background-color: #141617;
@@ -13,6 +175,7 @@ body{
     height: 20vh;
     background-image: url(header.jpg);
     background-size: contain;
+    background-repeat: repeat;
 }
 
 .navbar{
@@ -32,7 +195,6 @@ body{
 
 .left{
     flex: 1;
-    
     display: flex;
     align-items: center;
     height: 100%;
@@ -40,7 +202,6 @@ body{
 
 .right{
     flex: 3;
-
     height: 100%;
     display: flex;
     align-items: center;
@@ -121,7 +282,7 @@ body{
 
 .card-container{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 4rem;
 }
 
@@ -141,6 +302,9 @@ body{
     cursor: pointer;
 }
 
+.card p{
+    margin: 1rem auto;
+}
 .card:hover{
     background: linear-gradient(
         0deg,
@@ -294,96 +458,4 @@ body{
     margin-top: 0;
     font-size: 1.5rem;
 }
-
-
-/* TODO, media for phones */
-
-
-
-
-@media (min-width: 400px) {
-    .header{
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .right{
-        flex: 4;
-    }
-
-    .navbar{
-        padding: 0.1rem;
-    }
-
-    .navbar button{
-        font-size: 1rem;
-        padding: 0.1rem 0.5rem;
-    }
-    .container.one{
-        width: 80%;
-    }
-
-    .line-name{
-        font-size: 3rem;
-    }
-
-    .line-title{
-        font-size: 1.2rem;
-    }
-
-    .info{
-        width: 80%;
-        font-size: 1.2rem;
-    }
-
-    .projects-title{
-        font-size: 2.4rem;
-    }
-
-    .card-container{
-        grid-template-columns: 300px;
-        grid-gap: 2rem;
-    }
-
-    .card{
-        max-width: 300px;
-        min-width: 250px;
-    }
-
-    .proj-name{
-        font-size: 1.2rem;
-    }
-
-    .proj-info{
-        margin: 1rem auto;
-        width: 68%;
-        font-size: 0.8rem;
-    }
-}
-
-
-@media (min-width: 700px) {
-    .container.one{
-        width: 80%;
-    }
-    .contact-container{
-        width: 80%;
-    }
-    .card-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1200px) {
-    .container.one{
-        width: 30%;
-    }
-
-    .contact-container{
-        width: 28%;
-    }
-
-    .card-container{
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
