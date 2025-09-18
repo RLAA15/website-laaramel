@@ -100,7 +100,8 @@ body {
 .card-container {
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0 auto;
+    justify-items: center;
+    justify-content: center;
     grid-gap: 4rem;
 }
 
