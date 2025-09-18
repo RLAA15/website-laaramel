@@ -299,6 +299,69 @@ body{
 /* TODO, media for phones */
 
 
+
+
+@media (min-width: 400px) {
+    .header{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .right{
+        flex: 4;
+    }
+
+    .navbar{
+        padding: 0.1rem;
+    }
+
+    .navbar button{
+        font-size: 1rem;
+        padding: 0.1rem 0.5rem;
+    }
+    .container.one{
+        width: 80%;
+    }
+
+    .line-name{
+        font-size: 3rem;
+    }
+
+    .line-title{
+        font-size: 1.2rem;
+    }
+
+    .info{
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .projects-title{
+        font-size: 2.4rem;
+    }
+
+    .card-container{
+        grid-template-columns: 300px;
+        grid-gap: 2rem;
+    }
+
+    .card{
+        max-width: 300px;
+        min-width: 250px;
+    }
+
+    .proj-name{
+        font-size: 1.2rem;
+    }
+
+    .proj-info{
+        margin: 1rem auto;
+        width: 68%;
+        font-size: 0.8rem;
+    }
+}
+
+
 @media (min-width: 700px) {
     .container.one{
         width: 80%;
