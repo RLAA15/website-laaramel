@@ -96,7 +96,7 @@ body {
 .line { border: 2px solid white; width: 20%; margin: 3rem auto; }
 
 /* Projects */
-.projects-title { font-size: 3rem; color: white; }
+.projects-title { font-size: 3rem; color: white; margin: 0 auto;}
 
 .card-container {
     display: grid;
@@ -245,6 +245,7 @@ body {
     .skill-header h2 { font-size: 1.5rem; }
     .skill-info h3 { font-size: 1.9rem;}
     .skill-info h4 { font-size: 1rem; }
+    .contact-container {width: 80%;}
     .contact-title h1 { font-size: 3rem; }
     .contact-info-container p { font-size: 1.3rem; }
     .contact-info-container button { font-size: 1.2rem;}
@@ -260,7 +261,6 @@ body {
     .header{background-size: cover; background-position: center;}
     .navbar { padding: 2rem 3rem; }
     .info{width: 100%;}
-    .contact-container { width: 80%; }
 }
 
 @media (min-width: 1000px) {
