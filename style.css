@@ -101,6 +101,9 @@ body {
     justify-items: center;
 }
 
+.click{
+    text-decoration: none;
+}
 .card {
     min-width: 250px;
     max-width: 350px;
