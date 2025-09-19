@@ -109,6 +109,7 @@ a.click{
     max-width: 350px;
     background: linear-gradient(0deg, #141617 0%, #30343a 100%);
     text-align: center;
+    text-decoration: none;
     border-radius: 3rem;
     position: relative;
     overflow: hidden;
