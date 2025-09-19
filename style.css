@@ -17,13 +17,12 @@ body {
 .navbar {
     position: sticky;
     top: 0;
-    width: 90%;
-    height: 5vh;
-    margin: 1rem auto;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
     color: white;
     background-color: #141617;
     z-index: 10;
@@ -78,15 +77,10 @@ body {
     margin: 0 auto;
 }
 
-.container.one {
+.container-home {
     width: 30%;
     color: #fff;
-}
-
-.container.two {
-    height: 100vh;
-    justify-items: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 /* Text sections */
@@ -96,23 +90,20 @@ body {
 .line { border: 2px solid white; width: 20%; margin: 3rem auto; }
 
 /* Projects */
-.projects-title { font-size: 3rem; color: white; margin: 1rem auto; text-align: center;}
+.proj-intro {color: white;}
+.projects-title { font-size: 3rem; color: white; margin: 1rem auto;}
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;                  /* space between cards */
-    justify-content: center;     /* center the grid inside container */
-    justify-items: center;       /* center items inside grid */
+    margin-top: 5rem;
     width: 100%;
-    max-width: 1200px;           /* optional: prevents grid from stretching too wide on big screens */
-    margin: 0 auto;
+    display: grid;
+    align-items: center; 
+    justify-items: center;
 }
 
 .card {
     min-width: 250px;
     max-width: 350px;
-    box-shadow: 0px 2px 8px #f9f871;
     background: linear-gradient(0deg, #141617 0%, #30343a 100%);
     text-align: center;
     border-radius: 3rem;
@@ -129,7 +120,6 @@ body {
 }
 
 .proj-pic {
-    background-image: url(bg1.jpg);
     height: 10rem;
     background-position: 80% 50%;
     background-size: cover;
@@ -140,7 +130,6 @@ body {
 .proj-name {
     font-size: 1.5rem;
     margin: 1rem;
-    color: #f9f871;
 }
 
 .proj-info {
@@ -220,22 +209,49 @@ body {
 
 .contact-info { margin-top: 0; font-size: 1.5rem; }
 
+/* Card Color, Labelling and Picture */
+/* one */
+.card.one{box-shadow: 0px 2px 8px #f9f871;}
+.one .proj-pic{background-image: url(bg1.jpg);}
+.one .proj-name{color: #f9f871;}
+
+/* two */
+.card.two{box-shadow: 0px 2px 8px #fc6335;}
+.two .proj-pic{background-image: url(bg2.jpg);}
+.two .proj-name{color: #fc6335;}
+
+/* three */
+.card.three{box-shadow: 0px 2px 8px #35bdfc;}
+.three .proj-pic{background-image: url(bg3.jpg);}
+.three .proj-name{color: #35bdfc;}
+
+/* four */
+.card.four{box-shadow: 0px 2px 8px #35fc81;}
+.four .proj-pic{background-image: url(bg4.jpg);}
+.four .proj-name{color: #35fc81;}
+
+/* five */
+.card.five{box-shadow: 0px 2px 8px #35bdfc;}
+.five .proj-pic{background-image: url(bg5.jpg); background-size: cover;}
+.five .proj-name{color: #35bdfc;}
+
 /* Responsive Media Queries */
 @media (min-width: 350px) {
     .header { background-repeat: no-repeat; background-size: cover; background-position: center; height: 15vh;}
     .right { flex: 4; }
     .navbar { padding: 0.1rem; }
+    .left {padding-left: 3rem;}
+    .right {padding-right: 3rem;}
     .navbar button { font-size: 1rem; padding: 0.1rem 0.5rem; }
     .navbar button:hover { padding: 0 0.8rem; }
-    .container { width: 80%;}
+    .container-home{ width: 80%;}
     .line-name{font-size: 3rem;}
     .line-title{font-size: 1.5rem;}
     .info { width: 100%; font-size: 1.2rem; }
-    .projects-title { font-size: 2.4rem; }
-    .card-container { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem 0; }
     .card { max-width: 300px; min-width: 250px; }
+    .card-container {grid-template-columns: 1fr; row-gap: 2rem;}
     .proj-name { font-size: 1.2rem; }
-    .proj-info { width: 68%; font-size: 0.8rem; }
+    .proj-info { width: 83%; font-size: 0.8rem; }
     .intro-skills { width: 60%; margin: 0 auto;}
     .intro-title { font-size: 3rem; }
     .intro-info { font-size: 1.5rem; }
@@ -244,6 +260,9 @@ body {
     .skill-header h2 { font-size: 1.5rem; }
     .skill-info h3 { font-size: 1.9rem;}
     .skill-info h4 { font-size: 1rem; }
+    .proj-intro-container{width: 60%; margin: 0 auto;}
+    .projects-title { font-size: 3rem; margin-top: 2rem; margin-bottom: 0;}
+    .proj-intro {font-size: 1.5rem; margin-top: 0.5rem;}
     .contact-container {width: 80%;}
     .contact-title h1 { font-size: 3rem; }
     .contact-info-container p { font-size: 1.3rem; }
@@ -251,33 +270,37 @@ body {
 }
 
 @media (min-width: 650px) {
+    .navbar { padding: 0.4rem; }
+    .left {padding-left: 5rem;}
+    .right {padding-right: 5rem;}
     .navbar button{font-size: 1.5rem;}
-    .container{ width: 50%; margin: 0 auto;}
-    .card-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .container-home{ width: 50%; margin: 0 auto;}
+    .card-container {grid-template-columns: repeat(2,1fr);}
 }
 
 @media (min-width: 800px) {
     .header{background-size: cover; background-position: center;}
-    .navbar { padding: 2rem 3rem; }
     .info{width: 100%;}
 }
 
 @media (min-width: 1000px) {
+    .navbar { padding: 0.5rem; }
+    .left {padding-left: 7rem;}
+    .right {padding-right: 7rem;}
     .header{background-repeat: repeat; background-size: auto;}
-    .navbar { padding: 1rem 4rem; width: 70%;}
-    .card-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem 0; }
     .navbar button { padding: 0.2rem 1rem; font-size: 1.5rem;}
     .contact-container { width: 50%; }
+    .card-container {grid-template-columns: repeat(3,1fr);}
 }
 
 @media (min-width: 1200px) {
-    .navbar { padding: 1rem 4rem; width: 80%; }
+    .left {padding-left: 15rem;}
+    .right {padding-right: 15rem;}
     .navbar button:hover { padding: 0.2rem 1.5rem; }
     .line-name { font-size: 3rem; }
     .line-title { font-size: 1.2rem; }
-    .container.one { width: 30%; }
+    .container-home{ width: 30%; }
     .projects-title { font-size: 3rem; }
-    .card-container {grid-template-columns: repeat(4, 1fr); }
     .proj-name { font-size: 1.6rem; }
     .card { padding-bottom: 1rem; }
     .proj-info { font-size: 1rem; width: 80%; }
@@ -288,4 +311,15 @@ body {
     .skill-info h4 { font-size: 1.5rem; }
     .skill-info p { font-size: 1.5rem; }
     .contact-container { width: 25%; }
+}
+
+@media (min-width: 1400px){
+    .proj-intro-container{ width: 25%; height: auto; margin: 1rem auto;}
+    .left {padding-left: 20rem;}
+    .right {padding-right: 20rem;}
+    .card { max-width: 400px; min-width: 350px; }
+    .proj-pic {height: 15rem;}
+    .proj-name {font-size: 2rem;}
+    .proj-info {font-size: 1.5rem;}
+    .card-container {grid-template-columns: repeat(4,1fr);}
 }
