@@ -101,7 +101,7 @@ body {
     justify-items: center;
 }
 
-.click{
+a.click{
     text-decoration: none;
 }
 .card {
