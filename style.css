@@ -96,7 +96,7 @@ body {
 .line { border: 2px solid white; width: 20%; margin: 3rem auto; }
 
 /* Projects */
-.projects-title { font-size: 3rem; color: white; margin: 0 auto;}
+.projects-title { font-size: 3rem; color: white; margin: 0 auto; text-align: center;}
 
 .card-container {
     display: grid;
