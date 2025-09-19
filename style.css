@@ -187,7 +187,7 @@ body {
 }
 
 /* Contact */
-.contact-container { width: 28%; margin: 0 auto; color: white; }
+.contact-container { width: 28%; margin: 0 auto; color: white;}
 
 .contact-title h1 { font-size: 4rem; margin-bottom: 0; }
 
@@ -227,8 +227,7 @@ body {
     .navbar { padding: 0.1rem; }
     .navbar button { font-size: 1rem; padding: 0.1rem 0.5rem; }
     .navbar button:hover { padding: 0 0.8rem; }
-    .container.one { width: 80%;}
-    .container.two{margin: 0 auto;}
+    .container { width: 80%;}
     .line-name{font-size: 3rem;}
     .line-title{font-size: 1.5rem;}
     .info { width: 100%; font-size: 1.2rem; }
@@ -253,7 +252,7 @@ body {
 
 @media (min-width: 650px) {
     .navbar button{font-size: 1.5rem;}
-    .container.one { width: 50%; margin: 0 auto;}
+    .container{ width: 50%; margin: 0 auto;}
     .card-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 }
 
